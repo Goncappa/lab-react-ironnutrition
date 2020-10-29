@@ -32,24 +32,28 @@ class AddFood extends React.Component {
           <input
             type="text"
             name="name"
+            placeholder="name"
             value={this.state.name}
             onChange={this.handleInputChange}
           ></input>
           <input
             type="text"
             name="number"
+            placeholder="Quantity"
             value={this.state.number}
             onChange={this.handleInputChange}
           ></input>
           <input
             type="text"
             name="calories"
+            placeholder="Calories"
             value={this.state.calories}
             onChange={this.handleInputChange}
           ></input>
           <input
             type="text"
             name="image"
+            placeholder="imageUrl"
             value={this.state.image}
             onChange={this.handleInputChange}
           ></input>
