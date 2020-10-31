@@ -35,7 +35,11 @@ class App extends React.Component {
     // }) 
     
     const filteredFoods = this.state.query 
-    ? this.state.foods.filter((food) => food.name.includes(this.state.query))
+    ? this.state.foods.filter((food) => food.name.includes(this.state.query) || 
+    food.name.toLowerCase().includes(this.state.query) ||
+    food.name.toUpperCase().includes(this.state.query) ||
+    food.calories.toString().includes(Number(this.state.query)
+    )) 
     : this.state.foods;
 
     return (
